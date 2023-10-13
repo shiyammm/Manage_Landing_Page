@@ -8,7 +8,7 @@ const { Socials } = data;
 
 const Footer = () => {
   return (
-    <section className="relative">
+    <footer className="relative">
       {/* Mobile Devices */}
       <main className="bg-Dark-Blue flex flex-col items-center justify-center py-[4rem] lg:hidden ">
         <div>
@@ -79,7 +79,7 @@ const Footer = () => {
           <p>Copyright 2020. All Rights Reserved</p>
         </div>
       </main>
-    </section>
+    </footer>
   );
 };
 
