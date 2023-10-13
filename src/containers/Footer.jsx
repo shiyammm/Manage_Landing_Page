@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="relative">
       {/* Mobile Devices */}
-      <main className="bg-Dark-Blue flex flex-col items-center justify-center py-[4rem] lg:hidden ">
+      <div className="bg-Dark-Blue flex flex-col items-center justify-center py-[4rem] lg:hidden ">
         <div>
           <Newsletter />
         </div>
@@ -42,9 +42,9 @@ const Footer = () => {
             <p>Copyright 2020. All Rights Reserved</p>
           </div>
         </div>
-      </main>
+      </d>
       {/* Large Devices */}
-      <main className="bg-Dark-Blue lg:flex hidden py-[3rem]  lg:px-[4rem] xl:px-[9rem] items-center justify-between ">
+      <div className="bg-Dark-Blue lg:flex hidden py-[3rem]  lg:px-[4rem] xl:px-[9rem] items-center justify-between ">
         <div className="grid lg:gap-[1rem] xl:gap-[4rem]">
           <div>
             <img
@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="text-Dark-Grayish-Blue font-medium absolute top-[15rem] right-[9rem] text-center">
           <p>Copyright 2020. All Rights Reserved</p>
         </div>
-      </main>
+      </div>
     </footer>
   );
 };
