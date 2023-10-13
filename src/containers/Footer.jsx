@@ -42,7 +42,7 @@ const Footer = () => {
             <p>Copyright 2020. All Rights Reserved</p>
           </div>
         </div>
-      </d>
+      </div>
       {/* Large Devices */}
       <div className="bg-Dark-Blue lg:flex hidden py-[3rem]  lg:px-[4rem] xl:px-[9rem] items-center justify-between ">
         <div className="grid lg:gap-[1rem] xl:gap-[4rem]">
