@@ -8,7 +8,7 @@ const Testimonials = () => {
   const [switchMember, setSwitchMember] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const slideDuration = 5000;
+  const slideDuration = 1000;
 
   // Function to move to the next member
   const moveToNextMember = () => {
@@ -80,7 +80,7 @@ const Testimonials = () => {
                     alt={currentMember.name}
                   />
                 </picture>
-                <div className="bg-Light-Gray text-center pb-8 pt-[4rem]">
+                <div className="bg-Light-Gray lg:w-[37rem]  text-center pb-8 pt-[4rem]">
                   <h2 className="font-semibold text-secondary text-lg">
                     {currentMember.name}
                   </h2>
@@ -96,15 +96,15 @@ const Testimonials = () => {
         <section className="xl:flex items-center justify-center relative gap-4 mx-5 pt-9 h-64 hidden ">
           {TestimonialData.slice(currentIndex, currentIndex + 3).map(
             (currentMember) => (
-              <div key={currentMember.id} className="flex justify-center ">
-                <picture className="text-center absolute top-[-0.5rem]">
+              <div key={currentMember.id} className="flex justify-center">
+                <picture className="text-center absolute xl:top-[-2rem] 2xl:top-[-0.1rem]">
                   <img
                     src={currentMember.image}
                     className="w-24"
                     alt={currentMember.name}
                   />
                 </picture>
-                <div className="bg-Light-Gray text-center pb-8 pt-[4rem]">
+                <div className="bg-Light-Gray xl:w-[27rem] 2xl:w-[37rem] text-center pb-8 pt-[4rem]">
                   <h2 className="font-semibold text-secondary text-lg">
                     {currentMember.name}
                   </h2>
