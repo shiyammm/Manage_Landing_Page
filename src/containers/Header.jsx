@@ -4,8 +4,8 @@ import Button from '../components/Button';
 
 const Header = () => {
   return (
-    <main className="md:pt-9 lg:py-[7rem] max-w-full h-screen ">
-      <header className="lg:flex-row-reverse lg:flex lg:justify-between">
+    <header className="md:pt-9 lg:py-[7rem] w-full h-screen ">
+      <div className="lg:flex-row-reverse lg:flex lg:justify-between">
         <div className="mt-14 lg:mt-0 flex justify-center items-center lg:items-end">
           <img
             src={illustration}
@@ -28,8 +28,8 @@ const Header = () => {
             />
           </div>
         </div>
-      </header>
-    </main>
+      </div>
+    </header>
   );
 };
 
