@@ -117,8 +117,11 @@ const Testimonials = () => {
           )}
         </section>
       </main>
-      <div className="pb-11 pt-4 xl:pt-[7rem]">
-        <Button customStyle={`bg-primary text-white`} />
+      <div className=" lg:pt-[3rem] pb-11 pt-4">
+        <Button
+          customStyle={`bg-primary text-white`}
+          customHover={` hover:opacity-80`}
+        />
       </div>
     </section>
   );

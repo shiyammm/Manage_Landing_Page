@@ -11,7 +11,7 @@ const { NavLinks } = data;
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="flex justify-between items-center md:px-[5rem] relative z-10 ">
+    <nav className="flex justify-between items-center md:px-[5rem] ">
       <div>
         <a href="#home">
           <img src={Logo} alt="logo" className="w-32" />
@@ -44,16 +44,19 @@ const Navbar = () => {
       </div>
       {/* Desktop Devices */}
       <div className=" hidden md:flex">
-        <ul className="flex gap-5 font-medium text-secondary  ">
+        <ul className="flex gap-5  lg:gap-9 font-medium text-secondary  ">
           {NavLinks.map((link) => (
-            <li key={link.id}>
+            <li key={link.id} className="hover:text-Dark-Grayish-Blue ">
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
       </div>
-      <div className='hidden lg:flex relative z-10'>
-        <Button customStyle={`bg-primary text-white`} />
+      <div className="hidden lg:flex ">
+        <Button
+          customStyle={`bg-primary text-white`}
+          customHover={` hover:opacity-80`}
+        />
       </div>
     </nav>
   );

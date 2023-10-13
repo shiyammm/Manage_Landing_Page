@@ -5,3 +5,40 @@
 body {
   font-family: 'Be Vietnam Pro', 'sans-serif';
 }
+.bg-pattern {
+  background-image: url('./assets//images//light-orange-pattern.svg'), url('./assets//images//light-orange-pattern.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 110% -5%, -30% 55%;
+}
+
+@media (min-width: 1536px) {
+  .bg-pattern-banner {
+    background-image: url('./assets/images/extra-light-orange-pattern.svg'),
+      url('./assets/images/extra-light-orange-pattern.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+  
+}
+@media (max-width: 1536px) {
+  .bg-pattern-banner {
+    background-image: url('./assets/images/extra-light-orange-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .bg-pattern {
+    background-image: url('./assets//images//light-orange-pattern.svg'), url('./assets//images//light-orange-pattern.svg');
+    background-repeat: no-repeat ,  no-repeat;
+    background-position: 110% -2%, 150% 15%  ;
+    background-size: 500px, 400px;
+  }
+}
+@media (max-width: 1024px) {
+  .bg-pattern-banner {
+    background-image: url('./assets/images/extra-light-orange-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: -200px 100px;
+    background-size: 600px;
+  }
+
+}

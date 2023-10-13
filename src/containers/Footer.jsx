@@ -8,7 +8,7 @@ const { Socials } = data;
 
 const Footer = () => {
   return (
-    <section className='relative'>
+    <section className="relative">
       {/* Mobile Devices */}
       <main className="bg-Dark-Blue flex flex-col items-center justify-center py-[4rem] lg:hidden ">
         <div>
@@ -18,16 +18,16 @@ const Footer = () => {
           <div className="text-white py-14">
             <ul className="grid gap-5 gap-x-[9rem] grid-cols-2">
               {FooterLinks.map((link) => (
-                <li className="text-lg" key={link.id}>
+                <li className="text-lg hover:text-primary" key={link.id}>
                   {link.title}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="flex gap-11 items-center justify-center">
+          <div className="flex gap-11 items-center justify-center ">
             {Socials.map((social) => (
               <picture key={social.id}>
-                <img src={social.image} alt={social.id} className="w-11" />
+                <img src={social.image} alt={social.id} className="w-11 " />
               </picture>
             ))}
           </div>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </main>
       {/* Large Devices */}
-      <main className="bg-Dark-Blue lg:flex hidden py-[3rem]  lg:px-[4rem] xl:px-[9rem] items-center justify-between relative">
+      <main className="bg-Dark-Blue lg:flex hidden py-[3rem]  lg:px-[4rem] xl:px-[9rem] items-center justify-between ">
         <div className="grid lg:gap-[1rem] xl:gap-[4rem]">
           <div>
             <img
@@ -61,11 +61,11 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div >
+        <div>
           <div className="text-white lg:pt-[4rem] ">
             <ul className="grid gap-5 lg:gap-x-[2rem] xl:gap-x-[5rem] 2xl:gap-x-[17rem] grid-cols-2">
               {FooterLinks.map((link) => (
-                <li className="text-lg" key={link.id}>
+                <li className="text-lg hover:text-primary" key={link.id}>
                   {link.title}
                 </li>
               ))}

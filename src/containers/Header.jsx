@@ -1,23 +1,19 @@
 import React from 'react';
-import pattern from '../assets/images/bg-tablet-pattern.svg';
 import illustration from '../assets/images/illustration-intro.svg';
 import Button from '../components/Button';
 
 const Header = () => {
   return (
-    <section className='md:pt-9 lg:py-[7rem] w-full h-screen'>
-      <div className="absolute  top-[-10rem] right-[-11rem] ">
-        <img src={pattern} alt="pattern" className='w-[35rem] xl:w-[60rem] ' />
-      </div> 
+    <section className="md:pt-9 lg:py-[7rem] max-w-full h-screen ">
       <main className="lg:flex-row-reverse lg:flex lg:justify-between">
         <div className="mt-14 lg:mt-0 flex justify-center items-center lg:items-end">
           <img
             src={illustration}
-            className="relative w-80 lg:w-[30rem] xl:w-[45rem]"
+            className=" w-80 lg:w-[30rem] xl:w-[45rem]"
             alt="illustration"
           />
         </div>
-        <div className="text-center relative z-90  lg:text-left mx-auto lg:mx-0 w-[30rem] py-7 grid gap-5  z-20">
+        <div className="text-center  lg:text-left mx-auto lg:mx-0 w-[30rem] py-7 grid gap-5  z-20">
           <h1 className="font-bold text-secondary text-5xl leading-[3.5rem]">
             Bring everyone together to build better products.
           </h1>
@@ -26,7 +22,10 @@ const Header = () => {
             while keeping the larger team goals in view.
           </p>
           <div className="flex justify-center lg:justify-start ">
-            <Button customStyle={`bg-primary text-white`} />
+            <Button
+              customStyle={`bg-primary text-white`}
+              customHover={` hover:opacity-80`}
+            />
           </div>
         </div>
       </main>

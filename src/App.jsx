@@ -8,7 +8,7 @@ import Banner from './containers/Banner';
 
 const App = () => {
   return (
-    <section>
+    <section className="bg-pattern">
       <div className="px-8 pt-12 md:pt-[4rem]">
         <Navbar />
       </div>
