@@ -29,14 +29,14 @@ const Testimonials = () => {
     setSwitchMember(index);
   };
   return (
-    <article>
-      <section className="flex flex-col items-center justify-center pt-12  relative ">
+    <section>
+      <article className="flex flex-col items-center justify-center pt-12  relative ">
         <div className="text-center pb-14">
           <h1 className="text-4xl font-bold text-secondary">
             What they've said
           </h1>
         </div>
-        <main>
+        <div>
           {/* Mobile Devices */}
           <section className="flex flex-col items-center justify-center  mx-5  pt-5 lg:hidden">
             <picture className="text-center absolute top-[7.5rem] ">
@@ -119,15 +119,15 @@ const Testimonials = () => {
               ),
             )}
           </section>
-        </main>
+        </div>
         <div className=" lg:pt-[3rem] pb-11 pt-4">
           <Button
             customStyle={`bg-primary text-white`}
             customHover={` hover:opacity-80`}
           />
         </div>
-      </section>
-    </article>
+      </article>
+    </section>
   );
 };
 
