@@ -8,7 +8,7 @@ const Testimonials = () => {
   const [switchMember, setSwitchMember] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const slideDuration = 1000;
+  const slideDuration = 5000;
 
   // Function to move to the next member
   const moveToNextMember = () => {
